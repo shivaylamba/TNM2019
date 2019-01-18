@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    position: relative;
 }
 .text{
     color:#ffffff;
@@ -11,17 +12,6 @@ body{
 }
 span{
     position: absolute;
-    white-space: nowrap;
+    display: block;
     animation: floatText 5s infinite alternate ease-in-out;
-}
-
-@-webkit-keyframes floatText{
-  from {
-    left: 00%;
-  }
-
-  to {
-    /* left: auto; */
-    left: 50%;
-  }
 }
