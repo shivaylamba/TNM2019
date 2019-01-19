@@ -1,3 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+
+#sponsor .row .row .col-sm-3 img {
+  width: 245px;
+  height: 100px;
+}
+#sponsor .row .row .col-sm-4 img {
+  width: 245px;
+  height: 160px;
+}
+#sponsor .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 40%;
+  margin-top: 0%;
+  margin-left: -80%;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #000000;
+  color: #000000;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* //my code */
+
+
+.packman {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 7.5rem;
+	height: 7.5rem;
+}
+
+.eye {
+	width: 1rem;
+	height: 1rem;
+	background-color: #F4D146;
+	border-radius: 50%;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	z-index: 1;
+	animation: eye-moving 700ms ease-in-out infinite;
+}
+
+.mouth {
+	height: 100%;
+}
+
+.mouth-part {
+	position: absolute;
+	width: 7.5rem;
+	height: 3.75rem;
+	background-color: #F4D146;
+}
+
+.mouth-part:first-child {
+	top: 0;
+	left: 0;
+	border-radius: 4.6875rem 4.6875rem 0 0;
+	transform-origin: bottom;
+	animation: first-part 700ms ease-in-out infinite;
+}
+
+.mouth-part:last-child {
+	bottom: 0;
+	left: 0;
+	border-radius: 0 0 4.6875rem 4.6875rem;
+	transform-origin: top;
+	animation: second-part 700ms ease-in-out infinite;
+}
+
+.circles {
+	position: absolute;
+	top: 50%;
+	right: -35%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-50%);
+	animation: circle-moving linear 700ms infinite;
+}
+
+.circle {
+	width: 1rem;
+	height: 1rem;
+	background-color: #F4D146;
+	border-radius: 50%;
+	margin: 0 1.4rem;
+}
+
+@keyframes first-part {
+	50% {
+		transform: rotate(-40deg);
+	}
+}
+
+@keyframes second-part {
+	50% {
+		transform: rotate(40deg);
+	}
+}
+
+@keyframes eye-moving {
+	50% {
+		transform: translate(-0.625rem, -0.15625rem);
+	}
+}
+
+@keyframes circle-moving {
+	to {
+		transform: translate(-15.1%, -50%);
+	}
+}
+
+
+
+
+
+
+
+
+
 @font-face {
     font-family: "CustomFont";
     src: url("font/crackman.ttf");
@@ -8,4 +148,234 @@
 
     #heading{
         font-family: "CustomFont";
+        margin-top: 20px;
+        margin-left: 10%;
+        
+        color:#00bbff;
+        font-size: 6em;
     }
+
+    @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+/* html{
+  background-color:#000;
+  border-bottom:solid 5px blue;
+  border-top:solid 5px blue;
+  overflow-x:hidden;
+  padding-bottom:142px;
+} */
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Gochi+Hand');
+/* 
+body{
+  background: #000;
+  display: flex; */
+  /* max-width: 100%; */
+  /* justify-content: center;
+} */
+
+.date{
+  font-size: 3em;
+  font-family: 'Caveat', cursive;
+}
+
+.date span{
+  /* display: block; */
+  float: left;
+  animation: animate 3.5s linear infinite;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+  color: #111;
+}
+
+h1 span:nth-child(1){
+  animation-delay: 0s;
+}
+h1 span:nth-child(2){
+  animation-delay: .25s;
+}
+h1 span:nth-child(2){
+  animation-delay: .5s;
+}
+h1 span:nth-child(3){
+  animation-delay: .75s;
+}
+h1 span:nth-child(4){
+  animation-delay: 1s;
+}
+h1 span:nth-child(5){
+  animation-delay: 1.25s;
+}
+h1 span:nth-child(6){
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(7){
+  animation-delay: 1.75s;
+}
+h1 span:nth-child(7){
+    animation-delay: 2s;
+  }
+  h1 span:nth-child(8){
+    animation-delay: 2.25s;
+  }
+  h1 span:nth-child(9){
+    animation-delay: 2.5s;
+  }
+  h1 span:nth-child(10){
+    animation-delay: 2.75s;
+  }
+  h1 span:nth-child(11){
+    animation-delay: 3s;
+  }
+
+
+
+@keyframes animate {
+  0%, 100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00bbff,
+      0 0 20px #00bbff,
+      0 0 40px #00bbff,
+      0 0 80px #00bbff,
+      0 0 120px #00bbff,
+      0 0 200px #00bbff,
+      0 0 300px #00bbff,
+      0 0 400px #00bbff;
+  }
+  5%, 95%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+
+
+.pacman{
+  /* margin:40px 10px; */
+}
+
+.pacman-top{
+  background-color:yellow;
+  height:80px;
+  width:160px;
+  border-radius:100px 100px 0 0;
+  animation: spin1 0.5s infinite linear;
+}
+
+.pacman-bottom{
+background-color:yellow;
+  height:80px;
+  width:160px;
+  border-radius:0 0 100px 100px;
+  animation: spin2 0.5s infinite linear;
+}
+
+.feed {
+margin-top: 70%;
+margin-left:10%;
+width: 30px;
+height: 30px;
+border-radius: 30%;
+-moz-animation: eat 1s linear 0s infinite;
+-webkit-animation: eat 1s linear 0s infinite;
+animation: eat 1s linear 0s infinite;
+}   
+
+/* Animation*/
+
+@keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-moz-keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@-moz-keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-webkit-keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@-webkit-keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+
+
+
+@-moz-keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, `
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+}
+
+
+@-webkit-keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+
