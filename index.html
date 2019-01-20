@@ -194,6 +194,11 @@
             <div class="cloud c8"></div>
             <div class="mario"></div>
             <div class="floor"></div>
+            <div class="event-btns">
+                <div class="event-btn tech">Technical</div>
+                <div class="event-btn non-tech">Non-Technical</div>
+                <div class="event-btn cult">Cultural</div>
+            </div>
         </div>
        
 
@@ -411,6 +416,13 @@
                 } else {
                     $.fn.viewScroller.setChangeWhenAnim(false);
                 }
+            });
+
+            $('.event-btn').on('click', function(){
+                $.each($('.event-btn'), function(index, value){
+                    $(value).removeClass('active');
+                })
+                $(this).toggleClass('active');
             });
 			
         });
