@@ -5,11 +5,10 @@
 color:#ff0;
 font-family: 'font2';
 font-size: 3em;
-widows: 150px;;
+/* widows: 150px;; */
 position: absolute;
-left: 20px;
+left: 22%;
 bottom: 10%;
-
 }
 
 #theme1,
@@ -61,7 +60,7 @@ position: relative;
      font-size: 4em;
      width: 200px;
      position: absolute;
-     bottom: 10%;
+     bottom: 30%;
      right: 5%;
 }
 #theme1:hover,
@@ -119,21 +118,29 @@ position: relative;
       position: absolute;
       /* width:200px; */
       /* float: left; */
-      height: 100px;
+      /* height: 100px; */
       /* width: 100%; */
       /* right: 100px; */
-      left: 70%;
-      top: 100px;
+      /* left: 70%; */
+      right: 0;
+      top: 30%;
+      /* top: 100px; */
       /* margin-right: 10%; */
       /* margin-top: 100px; */
       /* margin:100px auto; */
  }
  .wrapper{
+     position: absolute;
+     top: 0;
+     right: 0;
      max-width:600px;
      padding:0 20px;
      /* margin:0 auto; */
 }
  .pacman-container {
+      position: absolute;
+      top: 0;
+      right: 0;
       display:block;
       width:100px;
       height: 100px;
@@ -146,6 +153,9 @@ position: relative;
       animation: bite 0.5s linear infinite;
  }
  .pacman-body {
+     position: absolute;
+     top: 0;
+     right: 0;
       background-color: #ff0;
       position: absolute;
       width: 100px;
