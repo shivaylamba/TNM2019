@@ -5,6 +5,11 @@
 color:#ff0;
 font-family: 'font2';
 font-size: 3em;
+widows: 150px;;
+position: absolute;
+left: 20px;
+bottom: 10%;
+
 }
 
 #theme1,
@@ -48,6 +53,16 @@ font-size: 3em;
 position: relative;
      /* float: right; */
      padding: 10px;
+}
+
+#dates{
+     font-family: "CustomFont";
+     color:#00bbff;
+     font-size: 4em;
+     width: 200px;
+     position: absolute;
+     bottom: 10%;
+     right: 5%;
 }
 #theme1:hover,
 #theme2:hover,
@@ -101,13 +116,17 @@ position: relative;
     }
 
  .pacman-holder{
-      position: relative;
+      position: absolute;
       /* width:200px; */
-      float: left;
+      /* float: left; */
       height: 100px;
-      width: 100%;
-      margin-top: 100px;
-      margin:100px auto;
+      /* width: 100%; */
+      /* right: 100px; */
+      left: 70%;
+      top: 100px;
+      /* margin-right: 10%; */
+      /* margin-top: 100px; */
+      /* margin:100px auto; */
  }
  .wrapper{
      max-width:600px;
