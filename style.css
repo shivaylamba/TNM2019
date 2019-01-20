@@ -85,12 +85,15 @@ position: relative;
      height: 300px;
      /* margin: auto; */
 }
-
+#theme_gif{
+     position: relative;
+     margin-left: 270px;
+}
     #heading{
         font-family: "CustomFont";
-        /* margin-top: 30px; */
-        /* margin-left: 10%; */
-        max-width: 75%;
+        margin-top: 30px;
+        margin-left: 10%;
+        max-width: 100%;
         height: 300px;
         float:left;
         color:#00bbff;
@@ -98,13 +101,13 @@ position: relative;
     }
 
  .pacman-holder{
-      position:relative;
+      position: relative;
       /* width:200px; */
       float: left;
-      height: 300px;
-      width: 25%;
-      /* margin-top: 50px; */
-      /* margin:100px auto; */
+      height: 100px;
+      width: 100%;
+      margin-top: 100px;
+      margin:100px auto;
  }
  .wrapper{
      max-width:600px;
