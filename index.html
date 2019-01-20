@@ -16,8 +16,9 @@
     <link rel="stylesheet" type="text/css" href="examples.css">
     <link rel = "stylesheet" href="bootstrap.css">
     <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="mario.css">
     <script src = "bootstrap.min.js"></script>
-   
+    <script src = "mario.js"></script>
     <style>
         /* Styles specific for this example */ 
         
@@ -37,7 +38,7 @@
 
 <body style = "background-color: #111;">
   
-    <div class="menu">
+    <!-- <div class="menu">
         <div class="buttons-section-fxd">
             <button id="hidePanel" class="btn-own btn-own-hidepanel raised center">&lt;&lt;</button>
         </div>
@@ -65,11 +66,11 @@
         <div class="buttons-section">
             <button class="btn-own btn-own-changeview raised center vs-mainview-next">next</button>
         </div>
-        <!-- <div class="scroll-checkbox">
+        <div class="scroll-checkbox">
             <input id="scroll" type="checkbox" checked>
             <label for="scroll">Scroll views when they are changing</label>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 
 
 
@@ -182,72 +183,17 @@
             </div>
         </div>
       
-        <div vs-anchor="view-3" class="mainview">
-            <div class="subbag">
-                <div vs-anchor="subview-a" class="subview subview-a">
-                    <div class="box">
-                        <div class="info">
-                            Cultural
-                            <div class="pos">
-                                <input type="button" value="&lt;" class="vs-subview-prev">
-                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
-                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
-                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
-                                <input type="button" value="&gt;" class="vs-subview-next">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-     
-     
-     
-     
-     
-     <!--  -->
-     
-     
-     
-     
-     
-                <div vs-anchor="subview-b" class="subview subview-b">
-                    <div class="box">
-                        <div class="info">
-                            Technical
-                            <div class="pos">
-                                <input type="button" value="&lt;" class="vs-subview-prev">
-                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
-                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
-                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
-                                <input type="button" value="&gt;" class="vs-subview-next">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-         
-         
-         
-         <!--  -->
-         
-         
-         
-         
-         
-         
-                <div vs-anchor="subview-c" class="subview subview-c">
-                    <div class="box">
-                        <div class="info">
-                            Non Technical
-                            <div class="pos">
-                                <input type="button" value="&lt;" class="vs-subview-prev">
-                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
-                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
-                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
-                                <input type="button" value="&gt;" class="vs-subview-next">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div vs-anchor="view-3" class="mainview view3">
+            <div class="cloud c1"></div>
+            <div class="cloud c2"></div>
+            <div class="cloud c3"></div>
+            <div class="cloud c4"></div>
+            <div class="cloud c5"></div>
+            <div class="cloud c6"></div>
+            <div class="cloud c7"></div>
+            <div class="cloud c8"></div>
+            <div class="mario"></div>
+            <div class="floor"></div>
         </div>
        
 
