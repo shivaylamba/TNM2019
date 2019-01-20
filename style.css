@@ -1,3 +1,17 @@
+#theme{
+/* margin-top: 100px; */
+/* width: 100%; */
+/* height: 100px; */
+color:#ff0;
+font-family: 'font2';
+font-size: 3em;
+widows: 150px;;
+position: absolute;
+left: 20px;
+bottom: 10%;
+
+}
+
 #theme1,
 #theme2,
 #theme3,
@@ -40,6 +54,16 @@ position: relative;
      /* float: right; */
      padding: 10px;
 }
+
+#dates{
+     font-family: "CustomFont";
+     color:#00bbff;
+     font-size: 4em;
+     width: 200px;
+     position: absolute;
+     bottom: 10%;
+     right: 5%;
+}
 #theme1:hover,
 #theme2:hover,
 #theme3:hover,
@@ -64,36 +88,44 @@ position: relative;
      font-size: 2.8em;
 }
 #logo{
-  width:200px;
-  height:60px;
+  width:250px;
+  height:80px;
   top:0px;
   position: absolute;
   right:0px;
 }
 .main_pacman{
-     margin-top: 0px;
+     /* margin-top: 40px; */
      width: 100%;
-     height: 200px;
+     height: 300px;
      /* margin: auto; */
 }
-
+#theme_gif{
+     position: relative;
+     margin-left: 270px;
+}
     #heading{
         font-family: "CustomFont";
-        /* margin-top: 20px; */
-        /* margin-left: 10%; */
-        max-width: 75%;
-        height: 200px;
+        margin-top: 30px;
+        margin-left: 10%;
+        max-width: 100%;
+        height: 300px;
         float:left;
         color:#00bbff;
         font-size: 6em;
     }
 
  .pacman-holder{
-      position:relative;
+      position: absolute;
       /* width:200px; */
-      float: left;
-      height: 200px;
-      width: 25%;
+      /* float: left; */
+      height: 100px;
+      /* width: 100%; */
+      /* right: 100px; */
+      left: 70%;
+      top: 100px;
+      /* margin-right: 10%; */
+      /* margin-top: 100px; */
       /* margin:100px auto; */
  }
  .wrapper{
@@ -455,6 +487,10 @@ body{
 } */
 
 .date{
+     /* margin: 0px auto; */
+     text-align: center;
+     vertical-align: middle;
+
   font-size: 3em;
   font-family: 'Caveat', cursive;
 }
@@ -549,3 +585,6 @@ h1 span:nth-child(7){
           
           }   
 
+#contact_heading{
+     color:#f1f1d1;
+}
