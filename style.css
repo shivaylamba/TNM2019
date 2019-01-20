@@ -1,7 +1,10 @@
-.theme{
-margin-top: 100px;
+#theme{
+/* margin-top: 100px; */
 /* width: 100%; */
 /* height: 100px; */
+color:#ff0;
+font-family: 'font2';
+font-size: 3em;
 }
 
 #theme1,
@@ -70,8 +73,8 @@ position: relative;
      font-size: 2.8em;
 }
 #logo{
-  width:200px;
-  height:60px;
+  width:250px;
+  height:80px;
   top:0px;
   position: absolute;
   right:0px;
@@ -85,7 +88,7 @@ position: relative;
 
     #heading{
         font-family: "CustomFont";
-        margin-top: 30px;
+        /* margin-top: 30px; */
         /* margin-left: 10%; */
         max-width: 75%;
         height: 300px;
@@ -462,7 +465,7 @@ body{
 } */
 
 .date{
-     margin: 0px auto;
+     /* margin: 0px auto; */
      text-align: center;
      vertical-align: middle;
 
