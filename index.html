@@ -19,7 +19,7 @@
     <script src = "bootstrap.min.js"></script>
    
     <style>
-        /* Styles specific for this example */
+        /* Styles specific for this example */ 
         
         .menu {
             left: 20px;
@@ -35,26 +35,29 @@
     </style>
 </head>
 
-<body>
+<body style = "background-color: #111;">
   
     <div class="menu">
         <div class="buttons-section-fxd">
             <button id="hidePanel" class="btn-own btn-own-hidepanel raised center">&lt;&lt;</button>
         </div>
         <div class="buttons-section">
-            <a href="#view-1" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">View 1</button></a>
+            <a href="#view-1" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Home</button></a>
         </div>
         <div class="buttons-section">
-            <a href="#view-2" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">View 2</button></a>
+            <a href="#view-2" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">About Us</button></a>
         </div>
         <div class="buttons-section">
-            <a href="#view-3" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">View 3</button></a>
+            <a href="#view-3" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Events</button></a>
         </div>
         <div class="buttons-section">
-            <a href="#view-4" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">View 4</button></a>
+            <a href="#view-4" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Gallery</button></a>
         </div>
         <div class="buttons-section">
-            <a href="#view-5" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">View 5</button></a>
+            <a href="#view-5" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Sponsors</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-6" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Contact Us</button></a>
         </div>
         <div class="buttons-section">
             <button class="btn-own btn-own-changeview raised center vs-mainview-prev">prev</button>
@@ -79,7 +82,7 @@
 
 
 
-    <div class="mainbag">
+    <div class="mainbag" style = "background-color: #000;padding:10px;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black;">
                 <h1 class = "date">
                         <span>1</span>
@@ -99,12 +102,7 @@
                 <img src = "images/MAIT_FULL_LOGO.png" id = "logo">
                 <div class = "main_pacman">
                     <h1 id = "heading">Techsurge and Mridang</h1>
-                    <!-- <div class="pacman">
-                            <div class="pacman-top"></div>
-                            <div class="pacman-bottom"></div>
-                            <div class="feed"></div> -->
-
-
+                   
                             <div class="pacman-holder moving">
                                 <div class="pacman-container">
                                     <div class="pacman-body"></div>
@@ -112,9 +110,10 @@
                                 </div>
                                 
                                 <div class="dot"></div>
+                                
                             </div>
                         </div>
-<h1 id = "theme">Theme: Gamification!</h1>
+
                             <!-- <div class="frame">
                                     <div class="packman">
                                         <div class="eye"></div>
@@ -131,16 +130,36 @@
                                         <div class="circle"></div>
                                     </div>
                                 </div> -->
+                                <!-- <h2 id = "theme">Theme: Gamification!</h2> -->
+<span id = "theme1">T</span>
+<span id = "theme2">H</span>
+<span id = "theme3">E</span>
+<span id = "theme4">M</span>
+<span id = "theme5">E</span>
+<span id = "theme6">:</span>
+<span id = "theme7">G</span>
+<span id = "theme8">A</span>
+<span id = "theme9">M</span>
+<span id = "theme10">I</span>
+<span id = "theme11">F</span>
+<span id = "theme12">I</span>
+<span id = "theme13">C</span>
+<span id = "theme14">A</span>
+<span id = "theme15">T</span>
+<span id = "theme16">I</span>
+<span id = "theme17">O</span>
+<span id = "theme18">N</span>
 
                 <div class="vs-center">
                     
               
-
+                    <!-- <h2 id = "theme">Theme: Gamification!</h2> -->
                    
                     
                    
                     <!-- <img src="images/viewscroller-logo.png" alt="viewScroller logo" class="logo"> -->
                  </div>
+                 
             </div>
         </div>
       
@@ -262,7 +281,7 @@
 
 
 
-        <div vs-anchor="view-6" class="mainview view6" style = "background-color: #00dccf;">
+        <div vs-anchor="view-6" class="mainview view6" style = "background-image: url('pubg-crates/wp2208669.png')">
             <!-- <div class="box"> -->
                 <!-- <div class="info">Contact</div> -->
          
@@ -412,28 +431,28 @@
                 }
             });
             // Sets start params for MENU
-            $('.mainbag').css({
-                'left': '140px'
-            });
-            $.fn.viewScroller.setSpaceMainBag(140); // Sets 140px space for MENU
-            // Show / hide menu panel
-            $('#hidePanel').on('click', function() {
-                if ($('.panel').css('display') !== 'none') {
-                    $('#hidePanel').text('>>');
-                    $('.panel').hide();
-                    $('.mainbag').css({
-                        'left': '0px'
-                    });
-                    $.fn.viewScroller.setSpaceMainBag(0); // sets mainbag's width when panel is closed
-                } else {
-                    $('#hidePanel').text('<<');
-                    $('.panel').show();
-                    $('.mainbag').css({
-                        'left': '140px'
-                    });
-                    $.fn.viewScroller.setSpaceMainBag(140); // sets mainbag's width when panel is open
-                }
-            });
+            // $('.mainbag').css({
+            //     'left': '140px'
+            // });
+            // $.fn.viewScroller.setSpaceMainBag(140); // Sets 140px space for MENU
+            // // Show / hide menu panel
+            // $('#hidePanel').on('click', function() {
+            //     if ($('.panel').css('display') !== 'none') {
+            //         $('#hidePanel').text('>>');
+            //         $('.panel').hide();
+            //         $('.mainbag').css({
+            //             'left': '0px'
+            //         });
+            //         $.fn.viewScroller.setSpaceMainBag(0); // sets mainbag's width when panel is closed
+            //     } else {
+            //         $('#hidePanel').text('<<');
+            //         $('.panel').show();
+            //         $('.mainbag').css({
+            //             'left': '140px'
+            //         });
+                    // $.fn.viewScroller.setSpaceMainBag(140); // sets mainbag's width when panel is open
+                // }
+            // });
             //Show / hide examples panel
             $('.examples').hide();
             $('.examples-show').click(function() {
