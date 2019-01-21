@@ -193,6 +193,11 @@
                 <div class="event-btn non-tech">Non-Technical</div>
                 <div class="event-btn cult">Cultural</div>
             </div>
+            <div class="events-grid">
+                <div class="event">
+                    Coming Soon!
+                </div>
+            </div>
         </div>
        
 
@@ -506,6 +511,7 @@
                     $(value).removeClass('active');
                 })
                 $(this).toggleClass('active');
+                $('.events-grid').css('display', 'grid');
             });
 			
         });
