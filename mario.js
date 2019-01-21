@@ -1,7 +1,6 @@
 var marioSteps = 1;
 setInterval(function() {
   marioSteps++
-  console.log(marioSteps);
   if (marioSteps > 2) {
     marioSteps = 0;
   }

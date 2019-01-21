@@ -80,9 +80,15 @@
 
 
 <!--  -->
+    <div id="myModal" class="modal">
 
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Coming Soon!</p>
+      </div>
 
-
+    </div>
     <div class="mainbag" style = "background-color: #000;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black;">
                 <!-- <h1 class = "date">
@@ -101,27 +107,29 @@
                     <!-- </br> -->
             <!-- <div class="vs-center-wrap"> -->
                 <img src = "images/MAIT_FULL_LOGO.png" id = "logo">
-                <!-- <div class = "main_pacman"> -->
-                     <!-- <h1 id = "heading">Techsurge and Mridang</h1> -->
-                     <img src="https://i.imgur.com/obymYX9.gif"/>
+
                    <!-- <div class = "pacmans"> -->
                         <!-- <img src="https://i.imgur.com/TY5BYLR.gif" style = "position: absolute; right: 10px; bottom: 10%;"/> -->
-                           <span id = "dates">14 - 16 March</span>
-                           <!-- <img src = "images/Theme.gif" id = "theme_gif"> -->
-                            <div class="pacman-holder moving">
-                                    <div class="pacman-container">
-                                        <div class="pacman-body"></div>
-                                        <div class="pacman-mouth"><div class="pacman"></div></div>
-                                    </div>
-                                    
-                                    <div class="dot"></div>
-                                    
-                                </div>
+                           
+                           
+                          
+                                <span id = "dates">14 - 16 March</span>
+                                <img src="https://i.imgur.com/obymYX9.gif" style = "position: absolute; left: 350px; top: 40px;"/>
+
                         <!-- </div> -->
                         <!-- </div> -->
 
                           
                                 <h2 id = "theme">Theme: Gamification!</h2>
+                                <div class="pacman-holder moving">
+                                        <div class="pacman-container">
+                                            <div class="pacman-body"></div>
+                                            <div class="pacman-mouth"><div class="pacman"></div></div>
+                                        </div>
+                                        
+                                        <div class="dot"></div>
+                                        
+                                    </div>
                                 <!-- <div class = "theme">
 <span id = "theme1">T</span>
 <span id = "theme2">H</span>
@@ -186,6 +194,16 @@
             <div class="cloud c8"></div>
             <div class="mario"></div>
             <div class="floor"></div>
+            <div class="event-btns">
+                <div class="event-btn tech">Technical</div>
+                <div class="event-btn non-tech">Non-Technical</div>
+                <div class="event-btn cult">Cultural</div>
+            </div>
+            <div class="events-grid">
+                <div class="event" id="myBtn">
+                    Coming Soon!
+                </div>
+            </div>
         </div>
        
 
@@ -493,6 +511,40 @@
                     $.fn.viewScroller.setChangeWhenAnim(false);
                 }
             });
+
+            $('.event-btn').on('click', function(){
+                $.each($('.event-btn'), function(index, value){
+                    $(value).removeClass('active');
+                })
+                $(this).toggleClass('active');
+                $('.events-grid').css('display', 'grid');
+            });
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
 			
         });
     </script>
