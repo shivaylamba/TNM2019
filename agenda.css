@@ -3,10 +3,10 @@
   }
   
   /* Set a background color */
-  body {
+  /* body {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
-  }
+  } */
   
   /* The actual timeline (the vertical ruler) */
   .timeline {
@@ -28,7 +28,7 @@
   }
   
   /* Container around content */
-  .container {
+  .timelinecontainer {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -36,7 +36,7 @@
   }
   
   /* The circles on the timeline */
-  .container::after {
+  .timelinecontainer::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -93,7 +93,7 @@
   }
   
   /* The actual content */
-  .content {
+  .timelinecontent {
     padding: 20px 30px;
     background-color: white;
     position: relative;
