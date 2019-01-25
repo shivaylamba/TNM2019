@@ -19,6 +19,7 @@
     <link rel = "stylesheet" href = "about.css">
     <link rel = "stylesheet" href="style.css">
     <link rel = "stylesheet" href="mario.css">
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css">
 
 
     <link rel="stylesheet" href = "gallery.css">
@@ -28,9 +29,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
-
-
-
     <script src = "bootstrap.min.js"></script>
     <script src = "mario.js"></script>
     <link rel = "stylesheet" href = "agenda.css">
@@ -94,17 +92,13 @@
 
     <!-- <div class="panel"></div> -->
 
-
-<!--  -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
+    <!-- <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Coming Soon!</p>
       </div>
 
-    </div>
+    </div> -->
     <div class="mainbag" style = "background-color: #000;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black">
             <img src = "images/pacman.png" style = "width: 100%;height: 100%;opacity: 0.1;">
@@ -378,13 +372,54 @@
                 <div class="event-btn non-tech">Non-Technical</div>
                 <div class="event-btn cult">Cultural</div>
             </div>
-            <div class="events-grid">
-                <div class="event" id="myBtn">
-                    Coming Soon!
-                </div>
+
+            
+            <div class="list-container">
+              <div id="accordion1" class="techlist">
+              <h3><a href="#">Heading for Technical</a></h3>
+              <div>
+              <p>This is the first sentence.</p>
+              </div>          
+              <h3><a href="#">Heading for second sentence</a></h3>            
+              <div>
+              <p>This is the second sentence.</p>
+              </div>
+              <h3><a href="#">Heading for third sentence</a></h3>
+              <div>
+              <p>This is the third sentence.</p>
+              </div>
+              </div>
+              <div id="accordion2" class="non-techlist">
+              <h3><a href="#">Heading for Non-Technical</a></h3>
+              <div>
+              <p>This is the first sentence.</p>
+              </div>          
+              <h3><a href="#">Heading for second sentence</a></h3>            
+              <div>
+              <p>This is the second sentence.</p>
+              </div>
+              <h3><a href="#">Heading for third sentence</a></h3>
+              <div>
+              <p>This is the third sentence.</p>
+              </div>
+              </div>
+              <div id="accordion3" class="cultlist">
+              <h3><a href="#">Heading for Cultural</a></h3>
+              <div>
+              <p>This is the first sentence.</p>
+              </div>          
+              <h3><a href="#">Heading for second sentence</a></h3>            
+              <div>
+              <p>This is the second sentence.</p>
+              </div>
+              <h3><a href="#">Heading for third sentence</a></h3>
+              <div>
+              <p>This is the third sentence.</p>
+              </div>
+              </div>
             </div>
-        </div>
-       
+          </div>
+
 
 
        <!--  -->
@@ -634,6 +669,7 @@
     <script src="jquery-3.1.0.min.js"></script>
     <script src="jquery.easing.min.js"></script>
     <script src="jquery.mousewheel.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
     <script src="viewScroller.js"></script>
     <script>
         $(document).ready(function() {
@@ -691,39 +727,74 @@
                 }
             });
 
-            $('.event-btn').on('click', function(){
+            $('.event-btn').on('click', function(event){
                 $.each($('.event-btn'), function(index, value){
                     $(value).removeClass('active');
                 })
                 $(this).toggleClass('active');
+                switch(event.target.classList[1]){
+                  case 'tech': console.log('tech');
+                                $('.techlist').css('display','block');
+                                $('.non-techlist').css('display','none');
+                                $('.cultlist').css('display','none');
+                                break;
+                  case 'non-tech': console.log('non-tech');
+                                $('.non-techlist').css('display','block');
+                                $('.cultlist').css('display','none');
+                                $('.techlist').css('display','none');
+                                break;
+                  case 'cult': console.log('cult');
+                                $('.cultlist').css('display','block');
+                                $('.non-techlist').css('display','none');
+                                $('.techlist').css('display','none');
+                                break;
+                }
                 $('.events-grid').css('display', 'grid');
             });
 
-            // Get the modal
-            var modal = document.getElementById('myModal');
+            // // Get the modal
+            // var modal = document.getElementById('myModal');
 
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+            // // Get the button that opens the modal
+            // var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+            // // Get the <span> element that closes the modal
+            // var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
+            // // When the user clicks on the button, open the modal 
+            // btn.onclick = function() {
+            //   modal.style.display = "block";
+            // }
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
+            // // When the user clicks on <span> (x), close the modal
+            // span.onclick = function() {
+            //   modal.style.display = "none";
+            // }
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
+            // // When the user clicks anywhere outside of the modal, close it
+            // window.onclick = function(event) {
+            //   if (event.target == modal) {
+            //     modal.style.display = "none";
+            //   }
+            // }
+
+            $('#accordion1').accordion({
+              collapsible: true,
+              active: false
+            });
+            $('#accordion2').accordion({
+              collapsible: true,
+              active: false
+            });
+            $('#accordion3').accordion({
+              collapsible: true,
+              active: false
+            });
+            // $( "#tabs" ).tabs({
+            //   classes: {
+            //     "ui-tabs": "highlight"
+            //   }
+            // });
 			
         });
     </script>
