@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="author" content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)">
@@ -15,8 +16,21 @@
     <link rel="stylesheet" type="text/css" href="viewScroller.css">
     <link rel="stylesheet" type="text/css" href="examples.css">
     <link rel = "stylesheet" href="bootstrap.css">
+    <link rel = "stylesheet" href = "about.css">
     <link rel = "stylesheet" href="style.css">
     <link rel = "stylesheet" href="mario.css">
+
+
+    <link rel="stylesheet" href = "gallery.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+
+
     <script src = "bootstrap.min.js"></script>
     <script src = "mario.js"></script>
     <link rel = "stylesheet" href = "agenda.css">
@@ -282,9 +296,70 @@
 
 
         <div vs-anchor="view-5" class="mainview view5">
-            <div id="myspecialdiv">
-                <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
-            </div>
+         <!--    <div id="myspecialdiv">
+               <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
+
+            </div>  -->
+            <div class = "viewdiv">
+           <center>    <h1 class="abouthead">About Us</h1></center> 
+                    <span style="font-size: 1.05em; color: white" class = "text">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
+                    
+                  
+                    <script>
+                        var el = document.querySelector(".text");
+                        var width=window.innerWidth *0.5;
+                        el.style.width=width + "px";
+                          var left = 1;
+                          var height =window.innerHeight - 0.95*window.innerHeight;
+                          var hitLeft = true;
+                          var hitRight = false;
+                          var maxHeight = window.innerHeight;
+                          var maxLeft = window.innerWidth - width;
+                          setInterval(() => {
+                            move();
+                          }, 10);
+                          function move() {
+                            if (left > 0 && left <= maxLeft && hitLeft && !hitRight) {
+                              if (left === maxLeft) {
+                                hitRight = true;
+                                hitLeft = false;
+                              }
+                              if (left === 1 || left === maxLeft) {
+                                height = height + 20;
+                              }
+                              if (height === maxHeight) {
+                                height = 0;
+                                left = 1;
+                                hitLeft = true;
+                                hitRight = false;
+                              }
+                              left++;
+                            } else if (hitRight) {
+                              if (left == 0) {
+                                hitLeft = true;
+                                hitRight = false;
+                                left++;
+                              } else {
+                                left--;
+                              }
+                            }
+                            el.style.left = left + "px";
+                            el.style.top = height + "px";
+                          }
+                        </script> 
+            
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div>
+
+                <marquee behavior="alternate" direction="left">
+                        <img src="../TNM2019/images/space.png" width="120" height="80"/>
+                      </marquee>
+
+          </div>
+
+
+        </div> 
+
         </div>
       
         <div vs-anchor="view-6" class="mainview view6">
