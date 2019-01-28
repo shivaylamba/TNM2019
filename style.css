@@ -840,7 +840,7 @@ h1 span:nth-child(7){
      }
 .viewdiv {
      background : url('./images/backgrounds/1.png') ;
-
+    height : 100%;
 }
 
 .abouthead{
