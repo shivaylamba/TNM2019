@@ -105,8 +105,8 @@
      justify-content: center;
    } */
    .pacman {
-     width: 100px;
-     height: 100px;
+     width: 6rem;
+     height: 6rem;
      position: absolute;
      /* top: 450px; */
      /* top: 75%; */
@@ -143,8 +143,8 @@
      animation: up 0.7s infinite;
    }
    .pacman .dots {
-     width: 16px;
-     height: 16px;
+     width: 1rem;
+     height: 1rem;
      background: white;
      position: absolute;
      border-radius: 8px;
@@ -162,9 +162,9 @@
    .ghost {
      z-index: 5;
      position: relative;
-     width: 76px;
-     height: 86px;
-     left: 70%;
+     width: 5rem;
+     height: 6rem;
+     left: 40%;
      top: 90%;
      margin-top: 400px;
      background: white;
@@ -242,8 +242,15 @@
      animation: eyes 0.7s infinite;
    }
    
-
-
+#viewdiv__span {
+  font-size: 2.5rem;
+  width:100%;
+}
+@media(max-width: 900px) {
+  #viewdiv__span {
+    font-size: 2rem;
+  }
+}
 
 
 #theme{
@@ -301,16 +308,47 @@ position: relative;
      /* float: right; */
      padding: 10px;
 }
+#gallery__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+.gallery__item {
+  width:45%;
+  position: relative;
+  height:32%
+}
 
 #dates{
      font-family: "CustomFont";
      color:#00bbff;
      /* color:#000; */
-     font-size: 4em;
-     width: 200px;
-     position: absolute;
-     top: 2%;
-     left: 2%;
+     font-size: 2.2rem;
+  
+     position: relative;
+     text-align: center;
+    
+}
+#tnm{
+  font-family: "CustomFont";
+  color:#00bbff;
+  /* color:#000; */
+  font-size: 3.3rem;
+  position: relative;
+  text-align: center;
+ margin:0;
+}
+#tnm1{
+  font-family: "CustomFont";
+  color:#00bbff;
+  /* color:#000; */
+  font-size: 2.5rem;
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+ 
 }
 #theme1:hover,
 #theme2:hover,
@@ -382,7 +420,7 @@ position: relative;
      position: absolute;
      top: 0;
      right: 0;
-     max-width:600px;
+     max-width:900px;
      padding:0 20px;
      /* margin:0 auto; */
 }
@@ -660,7 +698,6 @@ position: relative;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
 /* // use only the available space inside the 400x400 frame */
-
 #sponsor .row .row .col-sm-3 img {
   width: 245px;
   height: 100px;
@@ -673,7 +710,19 @@ position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+@media(max-width: 900px) {
+  #sponser__row {
+    display: flex;
+  }
+  #sponsor .row .row .col-sm-3 img {
+    width: 100%;
+    height: 100%;
+  }
+  #sponsor .row .row .col-sm-4 img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .frame {
   position: absolute;
@@ -703,7 +752,13 @@ position: relative;
 
 
 
-
+@font-face {
+  font-family: "atari";
+  src: url("font/atari.ttf");
+  /* src: url("CustomFont.woff") format("woff"),
+  url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg"); */
+  }
 
 
 @font-face {
@@ -838,15 +893,26 @@ h1 span:nth-child(7){
      
      
      }
-.viewdiv {
-     background : url('./images/backgrounds/1.png') ;
-    height : 100%;
+.angrybird__img1 {
+  position: absolute;
+  top:1%;
+  left:1%;
+  height:100px;
+  width:100px;
+}
+.angrybird__img2 {
+  position: absolute;
+  top:1%;
+  right:1%;
+  height:200px;
+  width:100px;
 }
 
 .abouthead{
      color : white;
-     position: center;
      font-family: space;
+     text-align: center;
+     margin-bottom: 5px;
 }
  @font-face {
      font-family: 'space';
@@ -854,6 +920,21 @@ h1 span:nth-child(7){
      font-style: normal;
      font-weight : 100;
      }
+
+     @font-face {
+      font-family: 'pacman';
+      src: url(font/PAC-FONT.TTF);
+      font-style: normal;
+      font-weight : 100;
+      } 
+.pactitle{
+
+  color : white;
+  position: center;
+  font-family: pacman;
+
+
+}
  .shivam1{
           width: 100%;
           height: 100%;
