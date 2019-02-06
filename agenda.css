@@ -110,8 +110,6 @@
   /* Full-width containers */
     .container {
       width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
     }
   
   /* Make sure that all arrows are pointing leftwards */

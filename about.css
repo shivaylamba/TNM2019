@@ -12,6 +12,7 @@ span{
     display: block;
     font-family: space;
     font-weight: 100;
+    font-size: 40px;
     animation: floatText 5s infinite alternate ease-in-out;
 }
 

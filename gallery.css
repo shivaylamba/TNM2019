@@ -11,11 +11,8 @@ background-size: cover; */
     list-style: none;
 }
 #ab_heading{
-    position: absolute;
-    top: 0px;
     text-align: center;
-    vertical-align: middle;
-    font-size: 4em;
+    font-size: 4rem;
 }
 /* #ab_heading1{
     position: absolute;
@@ -29,7 +26,6 @@ body {
     width: 100%; height: 100%;
     min-height: 100vh;
     font: normal 16px sans-serif;
-    padding: 40px 0;
 }
 
 #stuff {
@@ -38,6 +34,11 @@ body {
     -moz-animation:oscillate 10s infinite alternate; /* Firefox */
     -webkit-animation:oscillate 10s infinite alternate; /* Safari and Chrome */
     -o-animation:oscillate 10s infinite alternate; /* Opera */
+}
+@media(max-width: 900px) {
+    #stuff {
+        display:none;
+    }
 }
 
 @keyframes oscillate
@@ -429,7 +430,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
     font-family: "Arial";
     font-size: 20px;
     color: #ccc;
-    top: 65px; left: 120px;
+    top: 60px; left: 140px;
     z-index:2001;
     letter-spacing: 5px;
 }
@@ -688,7 +689,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
     background-color: #fff;
     color: #35373a;
     min-height: 100vh;
-    padding: 30px 50px;
+
 }
 
 .gallery-container h1 {
@@ -699,7 +700,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
 }
 .gallery-container h2 {
     text-align: center;
-    margin-top: 50px;
     font-family: angry;
     font-weight: bold;
 }
@@ -712,21 +712,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
 }
 
 .tz-gallery {
-    padding: 40px;
+    padding: 0 5rem;
 }
 
 /* Override bootstrap column paddings */
 .tz-gallery .row > div {
     padding: 2px;
 }
-
-.tz-gallery .lightbox img {
+.gallery__item .lightbox img {
     width: 100%;
+    height:100%;
     border-radius: 0;
     position: relative;
 }
 
-.tz-gallery .lightbox:before {
+.gallery__item .lightbox:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -743,7 +743,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
 }
 
 
-.tz-gallery .lightbox:after {
+.gallery__item .lightbox:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -755,8 +755,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40320', end
     transition: 0.4s;
 }
 
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
+.gallery__item .lightbox:hover:after,
+.gallery__item .lightbox:hover:before {
     opacity: 1;
 }
 

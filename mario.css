@@ -93,15 +93,18 @@
 .event-btns {
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 .event-btn {
   padding: 3%;
   margin: 5%;
-  background-color: white;
+  color: white;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  background : url('./images/shivamtopper.png');
+  background-size: contain;
 }
 
 .active {
@@ -179,9 +182,15 @@
 }
 
 .list-container{
+
   padding: 0 25%;
+
 }
 
+
+
 .techlist, .non-techlist, .cultlist {
+
   display: none;
+
 }

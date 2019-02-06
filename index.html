@@ -9,6 +9,15 @@
     <meta name="description" content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage." />
     <meta name="keywords" content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll" />
     <title>Techsurge and Mridang'19</title>
+    <link rel="stylesheet" href = "gallery.css">
+     <link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <script src="jquery-3.1.0.min.js"></script>
     <script src="jquery.easing.min.js"></script>
     <script src="jquery.mousewheel.min.js"></script>
@@ -19,19 +28,16 @@
     <link rel = "stylesheet" href = "about.css">
     <link rel = "stylesheet" href="style.css">
     <link rel = "stylesheet" href="mario.css">
-    <link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    
+    <link rel = "stylesheet" href="honeycomb.css">
+
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
 
 
-    <link rel="stylesheet" href = "gallery.css">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <script src = "bootstrap.min.js"></script>
     <script src = "mario.js"></script>
     <link rel = "stylesheet" href = "agenda.css">
@@ -95,7 +101,11 @@
 
     <!-- <div class="panel"></div> -->
 
-    <!-- <div id="myModal" class="modal">
+
+<!--  
+ <div id="myModal" class="modal">
+
+       Modal content 
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Coming Soon!</p>
@@ -104,7 +114,7 @@
     </div> -->
     <div class="mainbag" style = "background-color: #000;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black">
-            <img src = "images/pacman.png" style = "width: 100%;height: 100%;opacity: 0.1;">
+        <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
                 <!-- <h1 class = "date">
                         <span>1</span>
                         <span>4</span>
@@ -120,24 +130,34 @@
                       </h1> -->
                     <!-- </br> -->
             <!-- <div class="vs-center-wrap"> -->
-                <img src = "images/MAIT_FULL_LOGO.png" id = "logo">
+                
 
                    <!-- <div class = "pacmans"> -->
                         <!-- <img src="https://i.imgur.com/TY5BYLR.gif" style = "position: absolute; right: 10px; bottom: 10%;"/> -->
                            
-                           
+                     <!--  <h2 style="color : white">Theme: Gamification!</h2> -->
                           
-                                <!-- <h1 id = "tnm">Techsurge and Mridang'19</h1> -->
-                                <img src="https://i.imgur.com/ObvuHVs.gif" style = "top:5%;width:500px; height:400px;left: 30%;position: absolute;z-index: 999;"/>
-                                <!-- <img src=""/> -->
+                             <h4 id = "tnm" style="z-index: 10000;">Maharaja Agrasen Institute of Technology</h4>
+                            
+                             <h4 id = "tnm1" style="z-index: 10000;">presents.....</h4>
+
+                              <img src="images/12.png" style = "width:100%;max-width:500px; height:65%;position: relative;z-index: 999;display: block;margin: auto;"/>
+                             
+                             <br> <br> 
+
+                             <span id = "dates" style="z-index: 100000">14 - 16 March</span> 
+                             
+                             
+                             
+                              <!-- <img src=""/> -->
                                 <!-- https://i.imgur.com/ObvuHVs.gif -->
                                 <!-- https://i.imgur.com/obymYX9.gif -->
                         <!-- </div> -->
                         <!-- </div> -->
-
+                       <!--    <h2 style="color : white">Theme: Gamification!</h2> -->
                           
                                 <!-- <h2 id = "theme">Theme: Gamification!</h2> -->
-                                <!-- <div class="pacman-holder moving" style = "right: 0;">
+                              <!--   <div class="pacman-holder moving" style = "right: 0;">
                                         <div class="pacman-container">
                                             <div class="pacman-body"></div>
                                             <div class="pacman-mouth"><div class="pacman"></div></div>
@@ -146,14 +166,14 @@
                                         <div class="dot"></div>
                                         
                                      </div> -->
-                                     <div class="pacman">
+                                    <div class="pacman"style="z-index: 100000">
                                         <div class="top"></div>
                                         <div class="bottom"></div>
                                         <div class="dots"></div>
                                       </div>
-                                      <span id = "dates">14 - 16 March</span>
+                                <!--   <span id = "dates" style="z-index: 100000">14 - 16 March</span>   -->   
 
-                                      <div class="ghosts">
+                                      <div class="ghosts"style="z-index: 100000" >
                                         <div class="ghost">
                                           <div class="eyes">
                                             <span class="l-eye"></span>
@@ -230,7 +250,7 @@
 
 
 <!-- <div vs-anchor="view-2" class="mainview view2" style = "background: #000;">
-    <!-- <div id="myspecialdiv">
+     <div id="myspecialdiv">
         <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
     </div> -->
     <!-- <p style = "text-align: justify;font-size: 2em; color: #fff; ">Agenda - Day 1</p>
@@ -295,64 +315,76 @@
         <div vs-anchor="view-5" class="mainview view5">
          <!--    <div id="myspecialdiv">
                <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
-
+            
             </div>  -->
-            <div class = "viewdiv">
-           <center>    <h1 class="abouthead">About Us</h1></center> 
-                    <span style="font-size: 1.05em; color: white" class = "text">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
+          
+            <div class = "viewdiv" style="height:100%;">
+                    <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
+ 
+                    <h2 class="abouthead" style="z-index: 110000;position:relative;margin:0;">About Us</h2>
+               
+                    <span style=" z-index: 100000;position: relative;font-family:Atari; color: white;" class = "text" id="viewdiv__span">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
                     
                   
                     <script>
                         var el = document.querySelector(".text");
+                        var e2=  document.querySelector(".view5").offsetHeight;
+                        var e3 = el.offsetHeight;
                         var width=window.innerWidth *0.5;
                         el.style.width=width + "px";
                           var left = 1;
-                          var height =window.innerHeight - 0.95*window.innerHeight;
+                          var height =0;
                           var hitLeft = true;
                           var hitRight = false;
-                          var maxHeight = window.innerHeight;
+                          var maxHeight = 0.5*e2 - e3 ;
                           var maxLeft = window.innerWidth - width;
-                          setInterval(() => {
-                            move();
-                          }, 10);
-                          function move() {
-                            if (left > 0 && left <= maxLeft && hitLeft && !hitRight) {
-                              if (left === maxLeft) {
-                                hitRight = true;
-                                hitLeft = false;
+                          if(window.innerWidth >= 900) {
+
+                              setInterval(() => {
+                                move();
+                              }, 10);
+                              function move() {
+                                if (left > 0 && left <= maxLeft && hitLeft && !hitRight) {
+                                  if (left === maxLeft) {
+                                    hitRight = true;
+                                    hitLeft = false;
+                                  }
+                                  if (left === 1 || left === maxLeft) {
+                                    height = height + 20;
+                                  }
+                                  if (height >= maxHeight) {
+                                    height = 0;
+                                    left = 1;
+                                    hitLeft = true;
+                                    hitRight = false;
+                                  }
+                                  left++;
+                                } else if (hitRight) {
+                                  if (left == 0) {
+                                    hitLeft = true;
+                                    hitRight = false;
+                                    left++;
+                                  } else {
+                                    left--;
+                                  }
+                                }
+                                el.style.left = left + "px";
+                                el.style.top = height + "px";
                               }
-                              if (left === 1 || left === maxLeft) {
-                                height = height + 20;
-                              }
-                              if (height === maxHeight) {
-                                height = 0;
-                                left = 1;
-                                hitLeft = true;
-                                hitRight = false;
-                              }
-                              left++;
-                            } else if (hitRight) {
-                              if (left == 0) {
-                                hitLeft = true;
-                                hitRight = false;
-                                left++;
-                              } else {
-                                left--;
-                              }
-                            }
-                            el.style.left = left + "px";
-                            el.style.top = height + "px";
+                          } else {
+                            el.style.width = "100%";
+                            el.style.height = "68%";
                           }
                         </script> 
             
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <div>
-
-                <marquee behavior="alternate" direction="left">
-                        <img src="../TNM2019/images/space.png" width="120" height="80"/>
-                      </marquee>
-
-          </div>
+            <br><br><br>
+            <div>
+  
+                  <marquee behavior="alternate"style=" z-index: 220000;position: relative;" direction="left">
+                          <img src="./images/space.png"  style=" z-index: 220000;position: relative;  width : 80px; height : 60 px;"/>
+                        </marquee>
+  
+            </div>
 
 
         </div> 
@@ -371,60 +403,149 @@
             <div class="mario"></div>
             <div class="floor"></div>
             <div class="event-btns">
+                
                 <div class="event-btn tech">Technical</div>
                 <div class="event-btn non-tech">Non-Technical</div>
                 <div class="event-btn cult">Cultural</div>
             </div>
-
-            
+           
             <div class="list-container">
-              <div id="accordion1" class="techlist">
-              <h3><a href="#">Heading for Technical</a></h3>
-              <div>
-              <p>This is the first sentence.</p>
-              </div>          
-              <h3><a href="#">Heading for second sentence</a></h3>            
-              <div>
-              <p>This is the second sentence.</p>
-              </div>
-              <h3><a href="#">Heading for third sentence</a></h3>
-              <div>
-              <p>This is the third sentence.</p>
-              </div>
-              </div>
-              <div id="accordion2" class="non-techlist">
-              <h3><a href="#">Heading for Non-Technical</a></h3>
-              <div>
-              <p>This is the first sentence.</p>
-              </div>          
-              <h3><a href="#">Heading for second sentence</a></h3>            
-              <div>
-              <p>This is the second sentence.</p>
-              </div>
-              <h3><a href="#">Heading for third sentence</a></h3>
-              <div>
-              <p>This is the third sentence.</p>
-              </div>
-              </div>
-              <div id="accordion3" class="cultlist">
-              <h3><a href="#">Heading for Cultural</a></h3>
-              <div>
-              <p>This is the first sentence.</p>
-              </div>          
-              <h3><a href="#">Heading for second sentence</a></h3>            
-              <div>
-              <p>This is the second sentence.</p>
-              </div>
-              <h3><a href="#">Heading for third sentence</a></h3>
-              <div>
-              <p>This is the third sentence.</p>
-              </div>
-              </div>
+
+
+
+                <div id="accordion1" class="techlist">
+  
+  
+  
+                <h3><a href="#">Technical Category A</a></h3>
+
+                <div>
+    
+                    <ul>
+                        <li>LanGaming</li>
+                        <li>CodeBlaze</li>
+                        <li>CodingJunction</li>
+                        <li>LineFollower</li>
+                        <li>InfinteLoop</li>
+                        <li>AquaBot</li>
+                      
+
+                      </ul>
+  
+                </div>          
+  
+                <h3><a href="#">Technical Category B</a></h3>            
+  
+                <div>
+  
+                    <ul>
+                        <li>HackMAIT</li>
+                        <li>Pin N Play</li>
+                        <li>RoboWars</li>
+                        <li>RoboRace</li>
+                        <li>RoboSoccer</li>
+                        <li>RoboMaze</li>
+                      
+
+                      </ul>
+  
+                </div>
+  
+                </div>
+  
+  
+  
+                <div id="accordion2" class="non-techlist">
+  
+                <h3><a href="#">Non Technical Category A</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>MTVcorner</li>
+                        <li>VigyaFun</li>
+                        <li>SpoofMafia</li>
+                        <li>FifaMockttransfer</li>
+                        <li>CricketFantasyLeague</li>
+                        <li>BetheSherlock</li>
+                      
+
+                      </ul>
+                </div>          
+  
+                <h3><a href="#">Non Technical Category B</a></h3>            
+  
+                <div>
+                    <li>RangBarse</li>
+                    <li>PhotoBooth</li>
+                    <li>Scavenger Hunt</li>
+                    <li>SaReGaMa</li>
+                    <li>AdOReel</li>
+                
+                    
+  
+                </div>
+  
+               
+                </div>
+  
+                <div id="accordion3" class="cultlist">
+  
+                <h3><a href="#">Cultural Category A</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>Footloose</li>
+                        <li>HauteCouture</li>
+                        <li>Armageddon</li>
+                        <li>MAITgotTalent</li>
+                        <li>Impulse</li>
+                        <li>DekhTamashaDekh</li>
+                        <li>Footloose</li>
+                        <li>Panache</li>
+
+                      </ul>
+  
+                </div>          
+
+                <h3><a href="#">Cultural Category B</a></h3>            
+  
+                <div>
+  
+                    <ul>
+                        <li>Individual Obstaclerace</li>
+                        <li>wall climbing</li>
+                        <li>dramebaaz</li>
+                        <li>keep calm and rap on</li>
+                        <li>Rangmanch</li>
+                        <li>Turn the Bass Line up</li>
+
+                      </ul>
+  
+                </div>
+  
+                <h3><a href="#">Sports</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>Cricket</li>
+                        <li>Football</li>
+                        <li>Volleyball</li>
+                        <li>Basketball</li>
+                        <li>Badminton</li>
+                        <li>Tugofwar</li>
+                        <li>Dodgeball</li>
+                    
+
+                      </ul>
+  
+                </div>
+  
             </div>
-          </div>
-
-
-
+        </div>
+      </div>
        <!--  -->
        
        
@@ -432,34 +553,37 @@
 
         <div vs-anchor="view-7" class="mainview view7">
                 <section id="sponsor">
-                        <div class="timetable-wrapper location-present">
+                        <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
+
+                        <div class="timetable-wrapper location-present" style="z-index: 10000">
                         <div class="container">
+
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
                                     <div class="inner">
-                                            <span class="note" style="text-align: center; color:#fff;">
+                                            <span class="note" style="text-align: center; color:#fff;z-index: 100000;position: relative;">
                                                 <i class="nbr"></i>
                                                 who is supporting us?
-                                            </span>
-                                        <h2 class="title" style="text-align: center;color:#fff;font-size: 2em;">Our Sponsors</h2>
+                                            </span><br>
+                                        <h2 class="title" style="text-align: center;color:#fff;font-size: 2em;z-index: 1000000;position: relative;">Our Sponsors</h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" style="text-align: center;">
+                            <div class="row" style="text-align: center;" id="sponser__row">
                               <div class="row" style="text-align: center;">
                                 <div class="col-sm-3">
-                                    <img src="images/sponsor/cb.jpg" alt="Coding Blocks">
-                                </div>
+                                    <img src="images/sponsor/cb.jpg" alt="Coding Blocks" style="z-index: 100000;position: relative;">
+                                </div>                                                                          
                                 <div class="col-sm-3">
-                                    <img src="images/sponsor/cobb.jpg" alt="Cobb Italy" />
+                                    <img src="images/sponsor/cobb.jpg" alt="Cobb Italy" style="z-index: 100000;position: relative;"/>
                                 </div>
                                 <div class="col-sm-3">
                                        
-                                        <img src="images/sponsor/ss.jpg"  alt="Shake Shook" />
+                                        <img src="images/sponsor/ss.jpg" style="z-index: 100000;position: relative;" alt="Shake Shook" />
                                 </div>
                                 <div class="col-sm-3">
                                     <img  
-                                        src="images/sponsor/gateforum.jpg" alt="Gate Forum" 
+                                        src="images/sponsor/gateforum.jpg"style="z-index: 100000;position: relative;" alt="Gate Forum" 
                                        />      
                             </div>
                                 
@@ -468,20 +592,20 @@
                               <br><br>
                             <div class="row" >
                               <div class="col-sm-3" >
-                                    <img src="images/sponsor/cc.jpeg" alt="Californian Classics" />
+                                    <img src="images/sponsor/cc.jpeg" alt="Californian Classics" style="z-index: 100000;position: relative;"/>
                               </div>
                                       
                               <div class="col-sm-3">
                                     <img
-                                        src="images/sponsor/rio2.jpg" alt="Rio"
+                                        src="images/sponsor/rio2.jpg" style="z-index: 100000;position: relative;"alt="Rio"
                                         />  
                             </div>
                             <div class="col-sm-3" >
-                                     <img  src="images/sponsor/g3s.jpg" alt="G3S Cinemas"/>
+                                     <img  src="images/sponsor/g3s.jpg"style="z-index: 100000;position: relative;" alt="G3S Cinemas"/>
                             </div>
                             <div class="col-sm-3">
                                        
-                                       <img src="images/sponsor/justchill.jpg" alt="Just Chill"/>
+                                       <img src="images/sponsor/justchill.jpg" style="z-index: 100000;position: relative;"alt="Just Chill"/>
                                 </div>
                             </div>
                            <!-- <div class="row" style="text-align: center;">
@@ -500,20 +624,21 @@
                               <br><br>
                             <div class="row" >
                               <div class="col-sm-3" >
-                                    <img src="images/sponsor/an.jpeg" alt="Ash & Niell" />
+                                    <img src="images/sponsor/an.jpeg" style="z-index: 100000;position: relative;"alt="Ash & Niell" />
                               </div>
                                       
                               <div class="col-sm-3">
                                     <img
-                                        src="images/sponsor/chocoart.jpg" alt="Chocoart"
+                                        src="images/sponsor/chocoart.jpg"style="z-index: 100000;position: relative;" alt="Chocoart"
                                         />  
                             </div>
                             <div class="col-sm-3" >
-                                     <img  src="images/sponsor/mojoland.jpg" alt="Mojo Land"/>
+                                     <img  src="images/sponsor/mojoland.jpg"style="z-index: 100000;position: relative;" alt="Mojo Land"/>
                             </div>
                              <div class="col-sm-3">  
-                                    <img src="images/sponsor/cp.jpeg" alt="Central Perk"/>
+                                    <img src="images/sponsor/cp.jpeg"style="z-index: 100000;position: relative;" alt="Central Perk"/>
                                 </div>
+                                
                             </div>
                 
                 
@@ -526,68 +651,254 @@
                     </section>
         </div>
 
-    
-
-<!--  -->
-
 
     
         <div vs-anchor="view-8" class="mainview view8">
-            <div id="myspecialdiv2">
+             <!-- <div id="myspecialdiv2">
                 <iframe class="shivam1" scrolling="yes" frameborder="0" src="gallery.html"></iframe>
-            </div>
+            </div>  -->
+
+
+            <div class="container gallery-container" style = "background-image:url('./images/tnmpics/20.jpg');background-size:cover;width: 100%;height:100%;position: relative;" >
+                <img src="./images/angrybirds/ab.png" alt="Bird" class="angrybird__img1">
+                <img src="./images/angrybirds/584c69426e7d5809d2fa6361.png" alt="Bird" class="angrybird__img2">
+            
+                <h2 id = "ab_heading" style="height:7%;color: white">GALLERY</h2>
+
+              
+                <!-- <div class="tz-gallery" style = "background-color: #27cece;height:85%;">
+            
+                    <div class="row" id ="gallery__row">
+            
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/1.jpg">
+                                <img src="./images/tnmpics/1.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/2.jpg">
+                                <img src="./images/tnmpics/2.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/3.jpg">
+                                <img src="./images/tnmpics/3.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                       
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/5.jpg">
+                                <img src="./images/tnmpics/5.jpg" alt="Bridge">
+                            </a>
+                        </div> 
+                       
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/7.jpg">
+                                <img src="./images/tnmpics/7.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/11.jpg">
+                                <img src="./images/tnmpics/11.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/8.jpg">
+                                <img src="./images/tnmpics/8.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/9.jpg">
+                                <img src="./images/tnmpics/9.jpg" alt="Bridge">
+                            </a>
+                        </div>   
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/6.jpg">
+                                <img src="./images/tnmpics/6.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/10.jpg">
+                                <img src="./images/tnmpics/10.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/11.jpg">
+                                <img src="./images/tnmpics/11.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/12.jpg">
+                                <img src="./images/tnmpics/12.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/4.jpg">
+                                <img src="./images/tnmpics/4.jpg" alt="Bridge">
+                            </a>
+                        </div> 
+                    </div>
+             -->
+<!-- <div style="height: 100%;width:100%">
+             <ul class="containergallery" style="width: 100%; height : 100%">
+             <li class="item1"><a href="#0" title="01"><img src="./images/tnmpics/1.jpg" alt="01" height="100px"></a></li>
+             <li class="item1"><a href="#0" title="02"><img src="./images/tnmpics/1.jpg" alt="02"height="100px" ></a></li>
+             <li class="item1"><a href="#0" title="03"><img src="./images/tnmpics/2.jpg" alt="03"height="100px"></a></li>
+             <li class="item1"><a href="#0" title="04"><img src="./images/tnmpics/3.jpg" alt="04"height="100px"></a></li>
+             <li class="item1"><a href="#0" title="05"><img src="./images/tnmpics/4.jpg" height="100px"alt="05"></a></li>
+             <li class="item1"><a href="#0" title="06"><img src="./images/tnmpics/5.jpg" height="100px"alt="06"></a></li>
+             <li class="item1"><a href="#0" title="07"><img src="./images/tnmpics/6.jpg" height="100px"alt="07"></a></li>
+             <li class="item1"><a href="#0" title="08"><img src="./images/tnmpics/7.jpg"height="100px" alt="08"></a></li>
+             <li class="item1"><a href="#0" title="09"><img src="./images/tnmpics/8.jpg"height="100px" alt="09"></a></li>
+             
+         </ul>
+         
+         <script>
+         var list = document.querySelectorAll(".item a");
+         
+         for (var i = 0; i < list.length; i++) {
+             var url = list[i].children[0].getAttribute("src");
+           list[i].style.backgroundImage="url('" + url + "')";
+         }
+         
+         
+         
+         
+         </script>
+
+        
+           
+</div>        -->
+
+
+
+
+
+<ul class="honeycomb" lang="es">
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/1.jpg">
+      
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/2.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/3.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/4.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/5.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/6.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/7.jpg">
+    </li>
+    <li class="honeycomb-cell honeycomb__placeholder"></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+            <script>
+                baguetteBox.run('.tz-gallery');
+            </script>
+        <div id="stuff">
+                <div id="bird">
+                    <div class="hair" name="left"> </div>
+                  <div class="hair" name="right"> </div>         
+                  <ul id="angry">
+                      <li></li>
+                    <li></li> 
+                    <li> . . </li>     
+                    <li></li>       
+                    <li></li>       
+                    <li></li>       
+                    <li></li>      
+                    <li></li>   
+                    <li id="tail"></li>             
+                  </ul>
+                  </div>
+                <ul id="cloud">
+                    <li></li>
+                  <li></li>
+                  <li></li>
+                  </ul>
+              </div>
+
+
+
+ </div>
+
+
         </div>
 
 
 
-<!--  -->
-
-
-
-        <div vs-anchor="view-9" class="mainview view9">
-            <!-- <div class="box"> -->
-                <!-- <div class="info">Contact</div> -->
-         
-        <!--Section: Contact v.2-->
-
-
-
-        <div class="bg-image"></div>
-
-        <div class="bg-text">
-        <h1>CONTACT US</h1>
-
-
-        <div class="row">
-  <div class="column">
-    <i class="fas fa-map-marker-alt"></i>
-    <h3><strong>MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY</strong></h3>
-    <p>PSP Area, Plot No. 1, Sector-22, Rohini<br>Delhi-110086 </p>
-
-
-  </div>
-  <div class="column">
-    <i class="fas fa-phone"></i>
-    <h3><strong>PHONE</strong></h3>
-    <p>+91-11-65647742</p>
-  </div>
-  <div class="column">
-    <i class="fas fa-envelope"></i>
-    <h3><strong>EMAIL ADDRESS</strong></h3>
-    <p>tnm2k19@gmail.com</p>
-  </div>
-</div>
-
-    
-   
-
+<div vs-anchor="view-9" class="mainview view9">
+    <!-- <div class="box"> -->
+        <!-- <div class="info">Contact</div> -->
  
-</div>
-</div>
-        
-      
+<!--Section: Contact v.2-->
 
-        <!--Section: Contact v.2-->
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+<h1>CONTACT US</h1>
+
+
+<div class="row">
+<div class="column">
+<i class="fas fa-map-marker-alt"></i>
+<h3><strong>MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY</strong></h3>
+<p>PSP Area, Plot No. 1, Sector-22, Rohini<br>Delhi-110086 </p>
+
+
+</div>
+<div class="column">
+<i class="fas fa-phone"></i>
+<h3><strong>PHONE</strong></h3>
+<p>+91-11-65647742</p>
+</div>
+<div class="column">
+<i class="fas fa-envelope"></i>
+<h3><strong>EMAIL ADDRESS</strong></h3>
+<p>tnm2k19@gmail.com</p>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+<!--Section: Contact v.2-->
 
 
 
@@ -603,21 +914,22 @@
 <!--  -->
 
 
- <!-- <div vs-anchor="view-10" class="mainview view10">
-        
-    </div>  -->
+<!-- <div vs-anchor="view-10" class="mainview view10">
+
+</div>  -->
 
 
 
 
 
-    </div>
+</div>
+
 
 
     <script src="jquery-3.1.0.min.js"></script>
     <script src="jquery.easing.min.js"></script>
-    <script src="jquery.mousewheel.min.js"></script>
     <script src="jquery-ui.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
     <script src="viewScroller.js"></script>
     <script>
         $(document).ready(function() {
